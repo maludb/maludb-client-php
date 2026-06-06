@@ -57,6 +57,8 @@ The PHP driver is currently distributed using composer.
 composer require maludb/client
 ```
 
+You can also install the package an refer to the example code by cloning the repo. 
+
 ```bash
 git clone https://github.com/maludb/maludb-core.git
 cd maludb-core/drivers/php
