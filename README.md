@@ -51,27 +51,16 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.profile
 
 ## Install
 
-The PHP driver is currently distributed from this repository. The
-Packagist package name is reserved as `maludb/client`, but a plain
-`composer require maludb/client` only works after the package has been
-published to Packagist.
+The PHP driver is currently distributed using composer.
 
-To run examples or tests from this source tree:
+```bash
+composer require maludb/client
+```
 
 ```bash
 git clone https://github.com/maludb/maludb-core.git
 cd maludb-core/drivers/php
 composer install
-```
-
-To use the driver from another PHP project before the Packagist package is
-published, point Composer at your local checkout:
-
-```bash
-cd /path/to/your/php-project
-composer init --no-interaction --name=local/maludb-app   # skip if composer.json already exists
-composer config repositories.maludb-client path /path/to/maludb-core/drivers/php
-composer require 'maludb/client:*@dev'
 ```
 
 ## Quickstart
